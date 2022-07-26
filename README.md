@@ -13,17 +13,17 @@
 
 **[Input NCE-CT] | [Real CE-CT] | [Fake CE-CT] & [Input NCE-CT] | [Real CE-CT] | [Fake CE-CT]**
 
-# Multi-task Generative Architecture in PyTorch
+# Multi-task Generative Architecture (MTGA) in PyTorch
 
-We provide PyTorch implementations for Multi-task Generative Architecture (MTGA).
+We provide PyTorch implementations for Multi-task Generative Architecture.
 
-The code was inspired by [Pix2pix](https://github.com/junyanz) and modified by [Xiang-Yu Xiong](https://github.com/yXiangXiong).
+The code was inspired by [Pix2pix](https://github.com/junyanz) and modified to MTGA [Xiang-Yu Xiong](https://github.com/yXiangXiong).
 
 **Note**: The current software works well with PyTorch 1.4.0+. Check out the older [branch](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix/tree/pytorch0.3.1) that supports PyTorch 0.4.
 
 You may find useful information in [training/test tips](docs/tips.md) and [frequently asked questions](docs/qa.md).
 
-**A Cascaded multi-task generative framework for Aortic Dissection Detection: [Paper](https://ieeexplore.ieee.org/document/9827558)**
+**A Cascaded multi-task generative framework (CMTGF) for Aortic Dissection Detection: [Paper](https://ieeexplore.ieee.org/document/9827558)**
 
 The 3D U-Net was a older nnU-Net created by [FabianIsensee](https://github.com/yXiangXiong/nnUNet), it was used to segment aortic mask from NCE-CT.
 
@@ -49,25 +49,19 @@ cd CMTGF
 ```
 - For Anaconda users, you can use pip to install PyTorch and other libraries.
 
-### pix2pix train/test
+### MTGA train/test
 - Download a pix2pix dataset (e.g.facades):
 ```bash
 bash ./datasets/download_pix2pix_dataset.sh facades
 ```
-- Train a model:
-```bash
-#!./scripts/train_pix2pix.sh
-python train.py --dataroot ./datasets/facades --name facades_pix2pix --model pix2pix --which_direction BtoA
+- Train the MTGA:
 ```
-- To view training results and loss plots, run `python -m visdom.server` and click the URL http://localhost:8097. To see more intermediate results, check out  `./checkpoints/facades_pix2pix/web/index.html`
-- Test the model (`bash ./scripts/test_pix2pix.sh`):
-```bash
-#!./scripts/test_pix2pix.sh
-python test.py --dataroot ./datasets/facades --name facades_pix2pix --model pix2pix --which_direction BtoA
+python train.py --dataroot D:\...\Random_AorticData --name aortas_nce2ce --model paired_pix2pix3d --netC CNN_3D --dataset_mode aligned --input_nc 1 --output_nc 2 --gpu_ids 0 --batch_size 1 --netG unet_256 --no_html --pool_size 0 --norm batch --no_flip --print_freq 10 --lambda_C 1 --lambda_L1 200 --display_id -1
 ```
-The test results will be saved to a html file here: `./results/facades_pix2pix/test_latest/index.html`.
-
-You can find more scripts at `scripts` directory.
+- Test the MTGA:
+```
+python test.py --dataroot D:\...\Random_AorticData --name aortas_nce2ce --netC CNN_3D --model paired_pix2pix3d --netG unet_256 --dataset_mode aligned --input_nc 1 --output_nc 2 --norm batch --gpu_ids 0 --how_many 32 --eval --which_epoch 200
+```
 
 ## [Datasets]
 create  directory below and add your own datasets.
@@ -117,7 +111,7 @@ Best practice for training and testing your models.
 If you are interested in this project and use this code for your research, please cite our papers.
 ```
 @inproceedings{xiong2021CDLF,
-  author    = {vXiangyu Xiong, Xiuhong Guan, Chuanqi Sun, Tianjing Zhang, Hao Chen, Yan Ding, Zhangbo Cheng, Lei Zhao, Xiaohai Ma, Guoxi Xie},
+  author    = {Xiangyu Xiong, Xiuhong Guan, Chuanqi Sun, Tianjing Zhang, Hao Chen, Yan Ding, Zhangbo Cheng, Lei Zhao, Xiaohai Ma, Guoxi Xie},
   title     = {A Cascaded Deep Learning Framework for Detecting Aortic Dissection
                Using Non-contrast Enhanced Computed Tomography},
   booktitle = {43rd Annual International Conference of the {IEEE} Engineering in
