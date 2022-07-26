@@ -1,6 +1,17 @@
-<img src='imgs/normal_nce.GIF' align="left" width=384>
 
-<br><br><br>
+**#--------------------Normal--------------------##---------------------- AD----------------------#**
+
+
+<p align='left'>
+  <img src='imgs/normal_nce.GIF' width='106'/>
+  <img src='imgs/normal_ce.GIF' width='106'/>
+  <img src='imgs/normal_predict.GIF' width='106'/>
+  <img src='imgs/AD_nce.GIF' width='106'/>
+  <img src='imgs/AD_ce.GIF' width='106'/>
+  <img src='imgs/AD_predict.GIF' width='106'/>
+</p>
+
+**[Input NCE-CT] | [Real CE-CT] | [Fake CE-CT] & [Input NCE-CT] | [Real CE-CT] | [Fake CE-CT]**
 
 # Multi-task Generative Architecture in PyTorch
 
