@@ -1,7 +1,9 @@
+# Introduction
+Contrast-enhanced computed tomography (CE-CT) is the gold standard for diagnosing aortic dissection (AD). However, contrast agents can cause allergic reactions or renal failure in some patients. Moreover, AD diagnosis by radiologists using non-contrast-enhanced CT (NCE-CT) images has poor sensitivity. To address this issue, we propose a novel cascaded multi-task generative framework for AD detection using NCE-CT volumes.
+
+The framework includes a 3D nnU-Net and a 3D multi-task generative architecture (3D MTGA). Specifically, the 3D nnU-Net was employed to segment aortas from NCE-CT volumes. The 3D MTGA was then employed to simultaneously synthesize CE-CT volumes, segment true & false lumen, and classify the patient as AD or non-AD. It has great potential to reduce the misdiagnosis of AD using NCE-CT in clinical practice.
 
 **#--------------------Normal--------------------##---------------------- AD----------------------#**
-
-
 <p align='left'>
   <img src='imgs/normal_nce.GIF' width='106'/>
   <img src='imgs/normal_ce.GIF' width='106'/>
