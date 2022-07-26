@@ -74,7 +74,7 @@ CycleGAN course assignment [code](http://www.cs.toronto.edu/~rgrosse/courses/csc
 
 ## Getting Started
 ### Installation
-- Install PyTorch 0.4+ and torchvision from http://pytorch.org and other dependencies (e.g., [visdom](https://github.com/facebookresearch/visdom) and [dominate](https://github.com/Knio/dominate)). You can install all the dependencies by
+- Install PyTorch 1.4.0+ and torchvision from http://pytorch.org and other dependencies (e.g., [visdom](https://github.com/facebookresearch/visdom) and [dominate](https://github.com/Knio/dominate)). You can install all the dependencies by
 ```bash
 pip install -r requirements.txt
 ```
@@ -167,8 +167,45 @@ Note that we specified `--which_direction BtoA` as Facades dataset's A to B dire
 
 - See a list of currently available models at `./scripts/download_pix2pix_model.sh`
 
-## [Datasets](docs/datasets.md)
-Download pix2pix/CycleGAN datasets and create your own datasets.
+## [Datasets]
+create  directory below and add your own datasets.
+```
+Random_AorticData：
+|─trainA
+│      001_plain.nii.gz # non-contrast enhanced images of aorta
+│      002_plain.nii.gz
+│      003_plain.nii.gz
+│      ...
+│      
+├─trainB
+│      001_enhance.nii.gz # contrast enhanced images of aorta
+│      002_enhance.nii.gz
+│      003_enhance.nii.gz
+│      ...
+│      
+├─trainC
+│      001_aorta.nii.gz # annotated true and false lumen masks by radiologists
+│      002_aorta.nii.gz
+│      003_aorta.nii.gz
+│      ...
+│      
+├─testA
+│      004_plain.nii.gz # non-contrast enhanced images of aorta
+│      005_plain.nii.gz
+│      ...
+│      
+├─testB
+│      004_enhance.nii.gz # contrast enhanced images of aorta
+│      005_enhance.nii.gz
+│      ...
+│      
+├─testC
+│      004_aorta.nii.gz # annotated true and false lumen masks by radiologists
+│      005_aorta.nii.gz
+│      ...
+│      
+└─ground_truth_classification.csv # two columes: first is xxx.plain.nii.gz and second is 0/1. 0 is normal and 1 is aortic dissection.
+```
 
 ## [Training/Test Tips](docs/tips.md)
 Best practice for training and testing your models.
