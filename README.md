@@ -23,7 +23,7 @@ The code was inspired by [Jun-Yan Zhu](https://github.com/junyanz) and modified 
 
 You may find useful information in [training/test tips](docs/tips.md) and [frequently asked questions](docs/qa.md).
 
-**Pix2pix:  [Project](https://phillipi.github.io/pix2pix/) |  [Paper](https://arxiv.org/pdf/1611.07004.pdf) |  [Torch](https://github.com/phillipi/pix2pix)**
+**Pix2pix:  [Project](https://phillipi.github.io/pix2pix/) |  [Paper](https://ieeexplore.ieee.org/document/9827558) |  [Torch](https://github.com/phillipi/pix2pix)**
 
 <img src='imgs/visual_abstract.png' width="800px"/>
 
