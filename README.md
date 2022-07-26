@@ -50,10 +50,7 @@ cd CMTGF
 - For Anaconda users, you can use pip to install PyTorch and other libraries.
 
 ### MTGA train/test
-- Download a pix2pix dataset (e.g.facades):
-```bash
-bash ./datasets/download_pix2pix_dataset.sh facades
-```
+
 - Train the MTGA:
 ```
 python train.py --dataroot D:\...\Random_AorticData --name aortas_nce2ce --model paired_pix2pix3d --netC CNN_3D --dataset_mode aligned --input_nc 1 --output_nc 2 --gpu_ids 0 --batch_size 1 --netG unet_256 --no_html --pool_size 0 --norm batch --no_flip --print_freq 10 --lambda_C 1 --lambda_L1 200 --display_id -1
