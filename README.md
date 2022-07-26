@@ -25,7 +25,7 @@ You may find useful information in [training/test tips](docs/tips.md) and [frequ
 
 **Pix2pix:  [Project](https://phillipi.github.io/pix2pix/) |  [Paper](https://arxiv.org/pdf/1611.07004.pdf) |  [Torch](https://github.com/phillipi/pix2pix)**
 
-<img src='imgs/visual abstract.png' width="800px"/>
+<img src='imgs/visual_abstract.png' width="800px"/>
 
 
 **[EdgesCats Demo](https://affinelayer.com/pixsrv/) | [pix2pix-tensorflow](https://github.com/affinelayer/pix2pix-tensorflow) | by [Christopher Hesse](https://twitter.com/christophrhesse)**
