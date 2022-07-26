@@ -13,11 +13,11 @@
 
 **[Input NCE-CT] | [Real CE-CT] | [Fake CE-CT] & [Input NCE-CT] | [Real CE-CT] | [Fake CE-CT]**
 
-# Multi-task Generative Architecture (MTGA) in PyTorch
+# Multi-task Generative Architecture in PyTorch
 
-We provide PyTorch implementations for Multi-task Generative Architecture.
+We provide PyTorch implementations for Multi-task Generative Architecture (MTGA).
 
-The code was inspired by [Pix2pix](https://github.com/junyanz) and modified to MTGA [Xiang-Yu Xiong](https://github.com/yXiangXiong).
+The code was inspired by [Pix2pix](https://github.com/junyanz) and modified by [Xiang-Yu Xiong](https://github.com/yXiangXiong).
 
 **Note**: The current software works well with PyTorch 1.4.0+. Check out the older [branch](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix/tree/pytorch0.3.1) that supports PyTorch 0.4.
 
@@ -27,7 +27,7 @@ You may find useful information in [training/test tips](docs/tips.md) and [frequ
 
 The 3D U-Net was a older nnU-Net created by [FabianIsensee](https://github.com/yXiangXiong/nnUNet), it was used to segment aortic mask from NCE-CT.
 
-The folloiwing 3D MTGA was created by [Xiang-Yu Xiong](https://github.com/yXiangXiong), it contains a generator, a discriminator and a classifier.
+The following 3D MTGA was created by [Xiang-Yu Xiong](https://github.com/yXiangXiong), it contains a generator, a discriminator and a classifier.
 
 <img src='imgs/visual_abstract.png' width="800px"/>
 
