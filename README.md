@@ -173,26 +173,24 @@ Download pix2pix/CycleGAN datasets and create your own datasets.
 ## [Training/Test Tips](docs/tips.md)
 Best practice for training and testing your models.
 
-## [Frequently Asked Questions](docs/qa.md)
-Before you post a new question, please first look at the above Q & A and existing GitHub issues.
-
-
 ## Citation
-If you use this code for your research, please cite our papers.
+If you are interested in this project and use this code for your research, please cite our papers.
 ```
-@inproceedings{CycleGAN2017,
-  title={Unpaired Image-to-Image Translation using Cycle-Consistent Adversarial Networkss},
-  author={Zhu, Jun-Yan and Park, Taesung and Isola, Phillip and Efros, Alexei A},
-  booktitle={Computer Vision (ICCV), 2017 IEEE International Conference on},
-  year={2017}
+@inproceedings{xiong2021CDLF,
+  author    = {vXiangyu Xiong, Xiuhong Guan, Chuanqi Sun, Tianjing Zhang, Hao Chen, Yan Ding, Zhangbo Cheng, Lei Zhao, Xiaohai Ma, Guoxi Xie},
+  title     = {A Cascaded Deep Learning Framework for Detecting Aortic Dissection
+               Using Non-contrast Enhanced Computed Tomography},
+  booktitle = {43rd Annual International Conference of the {IEEE} Engineering in
+               Medicine {\&} Biology Society, {EMBC} 2021, Mexico, November 1-5,
+               2021},
+  year      = {2021},
 }
 
-
-@inproceedings{isola2017image,
-  title={Image-to-Image Translation with Conditional Adversarial Networks},
-  author={Isola, Phillip and Zhu, Jun-Yan and Zhou, Tinghui and Efros, Alexei A},
-  booktitle={Computer Vision and Pattern Recognition (CVPR), 2017 IEEE Conference on},
-  year={2017}
+@ARTICLE{xiong2022CMTGF,
+  author={Xiong, Xiangyu and Ding, Yan and Sun, Chuanqi and Zhang, Zhuoneng and Guan, Xiuhong and Zhang, Tianjing and Chen, Hao and Liu, Hongyan and Cheng, Zhangbo and Zhao, Lei and Ma, Xiaohai and Xie, Guoxi},
+  journal={IEEE Journal of Biomedical and Health Informatics}, 
+  title={A Cascaded Multi-Task Generative Framework for Detecting Aortic Dissection on 3D Non-contrast-enhanced Computed Tomography},
+  year={2022}
 }
 ```
 
@@ -200,12 +198,18 @@ If you use this code for your research, please cite our papers.
 
 ## Related Projects
 **[CycleGAN-Torch](https://github.com/junyanz/CycleGAN) |
-[pix2pix-Torch](https://github.com/phillipi/pix2pix) | [pix2pixHD](https://github.com/NVIDIA/pix2pixHD) |
-[iGAN](https://github.com/junyanz/iGAN) |
+[pix2pixHD](https://github.com/NVIDIA/pix2pixHD) |
+[EC-GAN](https://github.com/ayaanzhaque/EC-GAN) |
 [BicycleGAN](https://github.com/junyanz/BicycleGAN)**
 
-## Cat Paper Collection
-If you love cats, and love reading cool graphics, vision, and learning papers, please check out the Cat Paper [Collection](https://github.com/junyanz/CatPapers).
+## Aortic Dissection Detection (Non-contrast Enhanced CT) Papers Collection
+2022 Frontiers in Cardiovascular Medicine. [Advanced Warning of Aortic Dissection on Non-Contrast CT: The Combination of Deep Learning and Morphological Characteristics](https://www.frontiersin.org/articles/10.3389/fcvm.2021.762958/full).
 
+2021 IEEE EMBC. [A Cascaded Deep Learning Framework for Detecting Aortic Dissection Using
+Non-contrast Enhanced Computed Tomography](https://www.researchgate.net/publication/356933870_A_Cascaded_Deep_Learning_Framework_for_Detecting_Aortic_Dissection_Using_Non-contrast_Enhanced_Computed_Tomography).
+
+2020 Medical Image Analysis. [Detection, segmentation, simulation and visualization of aortic dissections: A review](https://www.tugraz.at/fileadmin/user_upload/tugrazExternal/c7625f78-a8e9-46f3-a92b-e09b4c328341/publication/Pepe_et_al__2020_.pdf).
+
+2020 European Radiology. [Deep learning algorithm for detection of aortic dissection on non-contrast-enhanced CT](https://link.springer.com/article/10.1007/s00330-020-07213-w).
 ## Acknowledgments
 Our code is inspired by [pytorch-pix2pix](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix).
