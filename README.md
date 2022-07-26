@@ -64,7 +64,10 @@ python test.py --dataroot D:\...\Random_AorticData --name aortas_nce2ce --netC C
 ```
 
 ## [Datasets]
-create  directory below and add your own datasets.
+create a directory below and add your own datasets.
+
+all 3D images have same size of 256x256x512.
+
 ```
 Random_AorticData：
 |─trainA
