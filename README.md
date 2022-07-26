@@ -15,15 +15,19 @@
 
 # Multi-task Generative Architecture in PyTorch
 
-We provide PyTorch implementations for both unpaired and paired image-to-image translation.
+We provide PyTorch implementations for Multi-task Generative Architecture (MTGA).
 
-The code was inspired by [Jun-Yan Zhu](https://github.com/junyanz) and modified by [Xiang-Yu Xiong](https://github.com/yXiangXiong).
+The code was inspired by [Pix2pix](https://github.com/junyanz) and modified by [Xiang-Yu Xiong](https://github.com/yXiangXiong).
 
 **Note**: The current software works well with PyTorch 1.4.0+. Check out the older [branch](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix/tree/pytorch0.3.1) that supports PyTorch 0.4.
 
 You may find useful information in [training/test tips](docs/tips.md) and [frequently asked questions](docs/qa.md).
 
-**Pix2pix:  [Project](https://phillipi.github.io/pix2pix/) |  [Paper](https://ieeexplore.ieee.org/document/9827558) |  [Torch](https://github.com/phillipi/pix2pix)**
+**A Cascaded multi-task generative framework for Aortic Dissection Detection: [Paper](https://ieeexplore.ieee.org/document/9827558)**
+
+The 3D U-Net was a older nnU-Net created by [FabianIsensee](https://github.com/yXiangXiong/nnUNet), it was used to segment aortic mask from NCE-CT.
+
+The folloiwing 3D MTGA was created by [Xiang-Yu Xiong](https://github.com/yXiangXiong), it contains a generator, a discriminator and a classifier.
 
 <img src='imgs/visual_abstract.png' width="800px"/>
 
@@ -31,13 +35,6 @@ You may find useful information in [training/test tips](docs/tips.md) and [frequ
 **[EdgesCats Demo](https://affinelayer.com/pixsrv/) | [pix2pix-tensorflow](https://github.com/affinelayer/pix2pix-tensorflow) | by [Christopher Hesse](https://twitter.com/christophrhesse)**
 
 <img src='imgs/edges2cats.jpg' width="400px"/>
-
-If you use this code for your research, please cite:
-
-Unpaired Image-to-Image Translation using Cycle-Consistent Adversarial Networks
-[Jun-Yan Zhu](https://people.eecs.berkeley.edu/~junyanz/)\*,  [Taesung Park](https://taesung.me/)\*, [Phillip Isola](https://people.eecs.berkeley.edu/~isola/), [Alexei A. Efros](https://people.eecs.berkeley.edu/~efros)
-In ICCV 2017. (* equal contributions) [[Bibtex]](https://junyanz.github.io/CycleGAN/CycleGAN.txt)
-
 
 Image-to-Image Translation with Conditional Adversarial Networks
 [Phillip Isola](https://people.eecs.berkeley.edu/~isola), [Jun-Yan Zhu](https://people.eecs.berkeley.edu/~junyanz), [Tinghui Zhou](https://people.eecs.berkeley.edu/~tinghuiz), [Alexei A. Efros](https://people.eecs.berkeley.edu/~efros)
