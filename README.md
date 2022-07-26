@@ -1,4 +1,4 @@
-<img src='imgs/normal_nce.gif' align="left" width=384>
+<img src='imgs/normal_nce.GIF' align="left" width=384>
 
 <br><br><br>
 
