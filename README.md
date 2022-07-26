@@ -2,7 +2,7 @@
 
 <br><br><br>
 
-# CycleGAN and pix2pix in PyTorch
+# Multi-task Generative Architecture in PyTorch
 
 We provide PyTorch implementations for both unpaired and paired image-to-image translation.
 
@@ -68,7 +68,7 @@ CycleGAN course assignment [code](http://www.cs.toronto.edu/~rgrosse/courses/csc
 </ul>
 
 ## Prerequisites
-- Linux or macOS
+- Linux or Windows (Pycharm + Anaconda)
 - Python 2 or 3
 - CPU or NVIDIA GPU + CUDA CuDNN
 
@@ -80,10 +80,10 @@ pip install -r requirements.txt
 ```
 - Clone this repo:
 ```bash
-git clone https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix
-cd pytorch-CycleGAN-and-pix2pix
+git clone https://github.com/yXiangXiong/CMTGF
+cd CMTGF
 ```
-- For Conda users, we include a script `./scripts/conda_deps.sh` to install PyTorch and other libraries.
+- For Anaconda users, you can use pip to install PyTorch and other libraries.
 
 ### CycleGAN train/test
 - Download a CycleGAN dataset (e.g. maps):
@@ -122,50 +122,6 @@ python test.py --dataroot ./datasets/facades --name facades_pix2pix --model pix2
 The test results will be saved to a html file here: `./results/facades_pix2pix/test_latest/index.html`.
 
 You can find more scripts at `scripts` directory.
-
-### Apply a pre-trained model (CycleGAN)
-- You can download a pretrained model (e.g. horse2zebra) with the following script:
-```bash
-bash ./scripts/download_cyclegan_model.sh horse2zebra
-```
-The pretrained model is saved at `./checkpoints/{name}_pretrained/latest_net_G.pth`. Check [here](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix/blob/master/scripts/download_cyclegan_model.sh#L3) for all the available CycleGAN models.
-- To test the model, you also need to download the  horse2zebra dataset:
-```bash
-bash ./datasets/download_cyclegan_dataset.sh horse2zebra
-```
-
-- Then generate the results using
-```bash
-python test.py --dataroot datasets/horse2zebra/testA --name horse2zebra_pretrained --model test
-```
-The option `--model test` is used for generating results of CycleGAN only for one side. `python test.py --model cycle_gan` will require loading and generating results in both directions, which is sometimes unnecessary. The results will be saved at `./results/`. Use `--results_dir {directory_path_to_save_result}` to specify the results directory.
-
-- If you would like to apply a pre-trained model to a collection of input images (rather than image pairs), please use `--dataset_mode single` and `--model test` options. Here is a script to apply a model to Facade label maps (stored in the directory `facades/testB`).
-``` bash
-#!./scripts/test_single.sh
-python test.py --dataroot ./datasets/facades/testB/ --name {your_trained_model_name} --model test
-```
-You might want to specify `--netG` to match the generator architecture of the trained model.
-
-### Apply a pre-trained model (pix2pix)
-
-Download a pre-trained model with `./scripts/download_pix2pix_model.sh`.
-
-- Check [here](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix/blob/master/scripts/download_pix2pix_model.sh#L3) for all the available pix2pix models. For example, if you would like to download label2photo model on the Facades dataset,
-```bash
-bash ./scripts/download_pix2pix_model.sh facades_label2photo
-```
-- Download the pix2pix facades datasets:
-```bash
-bash ./datasets/download_pix2pix_dataset.sh facades
-```
-- Then generate the results using
-```bash
-python test.py --dataroot ./datasets/facades/ --which_direction BtoA --model pix2pix --name facades_label2photo_pretrained
-```
-Note that we specified `--which_direction BtoA` as Facades dataset's A to B direction is photos to labels.
-
-- See a list of currently available models at `./scripts/download_pix2pix_model.sh`
 
 ## [Datasets]
 create  directory below and add your own datasets.
