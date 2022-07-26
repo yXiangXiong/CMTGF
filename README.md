@@ -34,12 +34,6 @@ The folloiwing 3D MTGA was created by [Xiang-Yu Xiong](https://github.com/yXiang
 
 **[EdgesCats Demo](https://affinelayer.com/pixsrv/) | [pix2pix-tensorflow](https://github.com/affinelayer/pix2pix-tensorflow) | by [Christopher Hesse](https://twitter.com/christophrhesse)**
 
-<img src='imgs/edges2cats.jpg' width="400px"/>
-
-Image-to-Image Translation with Conditional Adversarial Networks
-[Phillip Isola](https://people.eecs.berkeley.edu/~isola), [Jun-Yan Zhu](https://people.eecs.berkeley.edu/~junyanz), [Tinghui Zhou](https://people.eecs.berkeley.edu/~tinghuiz), [Alexei A. Efros](https://people.eecs.berkeley.edu/~efros)
-In CVPR 2017. [[Bibtex]](http://people.csail.mit.edu/junyanz/projects/pix2pix/pix2pix.bib)
-
 ## Prerequisites
 - Linux or Windows (Pycharm + Anaconda)
 - Python 2 or 3
