@@ -204,7 +204,8 @@ Random_AorticData：
 │      005_aorta.nii.gz
 │      ...
 │      
-└─ground_truth_classification.csv # two columes: first is xxx.plain.nii.gz and second is 0/1. 0 is normal and 1 is aortic dissection.
+└─ground_truth_classification.csv
+# csv file has two columes: first is xxx.plain.nii.gz and second is 0/1. 0 mean normal and 1 mean aortic dissection.
 ```
 
 ## [Training/Test Tips](docs/tips.md)
