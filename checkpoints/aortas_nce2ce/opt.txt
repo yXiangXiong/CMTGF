@@ -1,0 +1,57 @@
+----------------- Options ---------------
+             aspect_ratio: 1.0                           
+               batch_size: 1                             
+          checkpoints_dir: ./checkpoints                 
+                 dataroot: D:\MT_data_with_AD_mask\Random_AorticData	[default: None]
+             dataset_mode: aligned                       
+              display_env: main                          
+               display_id: 1                             
+             display_port: 8097                          
+           display_server: http://localhost              
+          display_winsize: 256                           
+                     eval: True                          	[default: False]
+                 fineSize: 256                           
+                  gpu_ids: 0                             
+                 how_many: 32                            	[default: 50]
+              init_c_gain: 0.1                           
+                init_gain: 0.02                          
+                init_type: normal                        
+                 input_nc: 1                             	[default: 3]
+                  isTrain: False                         	[default: None]
+                 lambda_C: 10.0                          
+                lambda_L1: 100.0                         
+                 loadSize: 256                           
+              manual_seed: 10                            
+         max_dataset_size: inf                           
+                     mode: score                         
+                    model: paired_pix2pix3d              	[default: test]
+                n_classes: 2                             
+                   n_fold: 5                             
+               n_layers_D: 3                             
+                     name: aortas_nce2ce              	[default: experiment_name]
+                      ndf: 64                            
+                     netC: CNN_3D                        	[default: resnet_10]
+                     netD: basic                         
+                     netG: unet_256                      
+                      ngf: 64                            
+               no_dropout: False                         
+                  no_flip: False                         
+                 no_lsgan: True                          
+                     norm: batch                         
+                    ntest: inf                           
+              num_threads: 4                             
+                output_nc: 2                             	[default: 3]
+                    phase: test                          
+                pool_size: 0                             
+           resize_or_crop: resize_and_crop               
+          resnet_shortcut: B                             
+              results_dir: ./results/                    
+          sample_duration: 512                           
+             sample_size1: 256                           
+             sample_size2: 256                           
+           serial_batches: False                         
+                   suffix:                               
+                  verbose: False                         
+          which_direction: AtoB                          
+              which_epoch: 100                           	[default: latest]
+----------------- End -------------------
