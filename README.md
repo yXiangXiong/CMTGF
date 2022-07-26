@@ -31,9 +31,6 @@ The folloiwing 3D MTGA was created by [Xiang-Yu Xiong](https://github.com/yXiang
 
 <img src='imgs/visual_abstract.png' width="800px"/>
 
-
-**[EdgesCats Demo](https://affinelayer.com/pixsrv/) | [pix2pix-tensorflow](https://github.com/affinelayer/pix2pix-tensorflow) | by [Christopher Hesse](https://twitter.com/christophrhesse)**
-
 ## Prerequisites
 - Linux or Windows (Pycharm + Anaconda)
 - Python 2 or 3
