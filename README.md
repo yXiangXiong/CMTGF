@@ -111,6 +111,7 @@ Best practice for training and testing your models.
 
 ## Citation
 If you are interested in this project and use this code for your research, please cite our papers.
+https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9827558
 ```
 @inproceedings{xiong2021CDLF,
   author    = {Xiangyu Xiong, Xiuhong Guan, Chuanqi Sun, Tianjing Zhang, Hao Chen, Yan Ding, Zhangbo Cheng, Lei Zhao, Xiaohai Ma, Guoxi Xie},
