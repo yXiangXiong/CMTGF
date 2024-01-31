@@ -112,8 +112,19 @@ Best practice for training and testing your models.
 ## Citation
 If you are interested in this project and use this code for your research, please cite our papers.
 
-Paper Link: https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9827558
+Paper Link:
+
+xiong2022CMTGF: https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9630989
+
+xiong2021CDLF: https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9827558
 ```
+@ARTICLE{xiong2022CMTGF,
+  author={Xiong, Xiangyu and Ding, Yan and Sun, Chuanqi and Zhang, Zhuoneng and Guan, Xiuhong and Zhang, Tianjing and Chen, Hao and Liu, Hongyan and Cheng, Zhangbo and Zhao, Lei and Ma, Xiaohai and Xie, Guoxi},
+  journal={IEEE Journal of Biomedical and Health Informatics}, 
+  title={A Cascaded Multi-Task Generative Framework for Detecting Aortic Dissection on 3D Non-contrast-enhanced Computed Tomography},
+  year={2022}
+}
+
 @inproceedings{xiong2021CDLF,
   author    = {Xiangyu Xiong, Xiuhong Guan, Chuanqi Sun, Tianjing Zhang, Hao Chen, Yan Ding, Zhangbo Cheng, Lei Zhao, Xiaohai Ma, Guoxi Xie},
   title     = {A Cascaded Deep Learning Framework for Detecting Aortic Dissection
@@ -122,13 +133,6 @@ Paper Link: https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9827558
                Medicine {\&} Biology Society, {EMBC} 2021, Mexico, November 1-5,
                2021},
   year      = {2021},
-}
-
-@ARTICLE{xiong2022CMTGF,
-  author={Xiong, Xiangyu and Ding, Yan and Sun, Chuanqi and Zhang, Zhuoneng and Guan, Xiuhong and Zhang, Tianjing and Chen, Hao and Liu, Hongyan and Cheng, Zhangbo and Zhao, Lei and Ma, Xiaohai and Xie, Guoxi},
-  journal={IEEE Journal of Biomedical and Health Informatics}, 
-  title={A Cascaded Multi-Task Generative Framework for Detecting Aortic Dissection on 3D Non-contrast-enhanced Computed Tomography},
-  year={2022}
 }
 ```
 
